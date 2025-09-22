@@ -71,7 +71,9 @@ input{
   --caption-1: 400 14px/180% var(--font-family-base);
   --caption-4: 200 10px/180% var(--font-family-base);
 
-  --button-4: 400 16px/180% var(--font-family-base)
+  --button-4: 400 16px/180% var(--font-family-base);
+
+  --body-4: 200 14px/180% var(font-family-base)
 }
 
 
@@ -89,4 +91,8 @@ input{
 
 .button-2{
     font: var(--button-4);
+}
+
+.body-4{
+    font: var(--body-4);
 }

@@ -16,17 +16,19 @@
         <nav class="py-4 grid grid-cols-5 items-center">
 
             <!-- logo -->
-            <div class="col-span-1">
-                <img src="images/mobile-logo.svg" alt="">
+            <div class="col-span-1 justify-self-start  flex justify-center items-center">
+                <img src="images/mobile-logo.svg" alt="mobile-logo">
+                <img class=" w-[50%] hidden sm:block" src="images/logo-type.svg" alt="logo-type">
             </div>
 
             <!-- search box -->
             <!-- add /active-search/ class to show input -->
             <div id="search-box"
-                class="flex gap-4 justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-full col-span-3">
+                class="flex gap-4 justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-[var(--radius-16)] col-span-3">
                 <div id="search-placeholder" class="flex items-center justify-start">
-                    <span class="block caption-4">جستجو در</span>
-                    <img src="images/text-logo.svg" alt="">
+                    <span class="caption-4 text-[var(--color-primary)] sm:hidden block">جستجو در</span>
+                    <span class="body-4 opacity-80 text-[var(--color-primary)] sm:block hidden">جستجو...</span>
+                    <img class="sm:hidden" src="images/text-logo.svg" alt="">
                 </div>
                 <input id="search-input" class="w-full hidden " type="text">
                 <div class="w-6! h-6! flex justify-center items-center">
@@ -35,7 +37,7 @@
             </div>
 
             <!-- bascet icon -->
-            <div class=" col-span-1 justify-self-end flex items-center gap-2">
+            <div class=" col-span-1 justify-self-end  flex items-center gap-2">
                 <div class="relative">
                     <img src="images/shopping-cart-logo.svg" alt="">
                     <span
