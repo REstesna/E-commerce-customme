@@ -1,0 +1,72 @@
+
+*{
+    direction: rtl;
+
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url(../fonts/Estedad[wght\,kshd].woff2);
+}
+
+
+
+:root {
+  /* Primary */
+  --color-primary: #A72F3B;
+  --color-primary-tint-7: #B95562;
+  --color-primary-tint-6: #CA8269;
+  --color-primary-tint-5: #DCAC81;
+  --color-primary-tint-4: #E5C1C4;
+  --color-primary-tint-3: #EDD5D8;
+  --color-primary-tint-2: #F6EAEB;
+  --color-primary-tint-1: #FFFFFF;
+
+  --color-primary-shade-7: #68262F;
+  --color-primary-shade-6: #461C23;
+  --color-primary-shade-5: #431318;
+  --color-primary-shade-4: #320E12;
+  --color-primary-shade-3: #21090C;
+  --color-primary-shade-2: #110506;
+  --color-primary-shade-1: #000000;
+
+  /* Neutral */
+  --gray-1: #FAFAFA;
+  --gray-2: #F0F0F0;
+  --gray-3: #EDEDED;
+  --gray-4: #D6D6D6;
+  --gray-5: #BCBCBC;
+  --gray-6: #AFAFAF;
+  --gray-7: #888889;
+  --gray-8: #656565;
+  --gray-9: #461C23;
+  --gray-10: #242424;
+
+  /* States */
+  --color-error: #C30000;
+  --color-error-light: #ED2E2E;
+  --color-warning: #A9791C;
+  --color-warning-light: #F48740;
+  --color-success: #00966D;
+  --color-success-light: #00BA88;
+
+  /* State backgrounds */
+  --color-error-bg: #FFF2F2;
+  --color-warning-bg: #FFF8E1;
+  --color-success-bg: #F3FDFA;
+
+  /* Border radius */
+  --corner-sm: 8px;
+  --corner-md: 12px;
+  --corner-lg: 16px;
+
+  /* Typography */
+  --font-family-base: 'Estedad', sans-serif;
+}
+
+
+.container{
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
