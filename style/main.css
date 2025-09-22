@@ -1,7 +1,7 @@
 
 *{
     direction: rtl;
-
+    font:400 14px/1.2 var(--font-family-base);
 }
 
 @font-face {
@@ -9,6 +9,11 @@
     src: url(../fonts/Estedad[wght\,kshd].woff2);
 }
 
+button,
+input{
+    outline: none;
+    border: none;
+}
 
 
 :root {
@@ -16,7 +21,7 @@
   --color-primary: #A72F3B;
   --color-primary-tint-7: #B95562;
   --color-primary-tint-6: #CA8269;
-  --color-primary-tint-5: #DCAC81;
+  --color-primary-tint-5: #DCACB1;
   --color-primary-tint-4: #E5C1C4;
   --color-primary-tint-3: #EDD5D8;
   --color-primary-tint-2: #F6EAEB;
@@ -56,12 +61,17 @@
   --color-success-bg: #F3FDFA;
 
   /* Border radius */
-  --corner-sm: 8px;
-  --corner-md: 12px;
-  --corner-lg: 16px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
 
   /* Typography */
   --font-family-base: 'Estedad', sans-serif;
+
+  --caption-1: 400 14px/180% var(--font-family-base);
+  --caption-4: 200 10px/180% var(--font-family-base);
+
+  --button-4: 400 16px/180% var(--font-family-base)
 }
 
 
@@ -70,3 +80,13 @@
     padding: 0.2rem;
 }
 
+.caption-1{
+    font: var(--caption-1);
+}
+.caption-4{
+    font: var(--caption-4);
+}
+
+.button-2{
+    font: var(--button-4);
+}

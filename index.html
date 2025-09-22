@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,48 @@
     <link rel="stylesheet" href="./style/main.css">
     <title>کاستومی | فروشگاه آنلاین</title>
 </head>
+
 <body>
-    
-    <header class="container"> 
-        <nav class="py-2">
-            
+
+    <header class="container">
+
+        <nav class="py-4 grid grid-cols-5 items-center">
+
             <!-- logo -->
-            <div>
+            <div class="col-span-1">
                 <img src="images/mobile-logo.svg" alt="">
             </div>
-            
-            <!-- serach box -->
-            <div>
-                <div>
-                    <span>جستجو در</span>
+
+            <!-- search box -->
+            <!-- add /active-search/ class to show input -->
+            <div id="search-box"
+                class="flex gap-4 justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-full col-span-3">
+                <div id="search-placeholder" class="flex items-center justify-start">
+                    <span class="block caption-4">جستجو در</span>
                     <img src="images/text-logo.svg" alt="">
                 </div>
-                <div>
-                    <img src="images/search-normal.svg" alt="">
+                <input id="search-input" class="w-full hidden " type="text">
+                <div class="w-6! h-6! flex justify-center items-center">
+                    <img class="w-full! h-full!" src="images/search-normal.svg" alt="">
                 </div>
             </div>
-            
+
             <!-- bascet icon -->
-            <div>
-                <img src="images/shopping-cart-logo.svg" alt="">
+            <div class=" col-span-1 justify-self-end flex items-center gap-2">
+                <div class="relative">
+                    <img src="images/shopping-cart-logo.svg" alt="">
+                    <span
+                        class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
+                </div>
+                <span class="sm:block hidden">سبد خرید</span>
+
             </div>
 
         </nav>
     </header>
-    
 
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
