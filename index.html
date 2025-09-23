@@ -11,44 +11,166 @@
 
 <body>
 
-    <header class="container">
+    <header class="  ">
 
-        <nav class="py-4 grid grid-cols-5 items-center">
+        <!-- navbar section  -->
+        <section class="border py-4 border-[var(--gray-4)]">
+            <nav class="container grid grid-cols-5 items-center">
 
-            <!-- logo -->
-            <div class="col-span-1 justify-self-start  flex justify-center items-center">
-                <img src="images/mobile-logo.svg" alt="mobile-logo">
-                <img class=" w-[50%] hidden sm:block" src="images/logo-type.svg" alt="logo-type">
+                <!-- logo -->
+                <div class="col-span-1 justify-self-start  flex justify-center items-center">
+                    <img src="images/mobile-logo.svg" alt="mobile-logo">
+                    <img class=" w-[50%] hidden sm:block" src="images/logo-type.svg" alt="logo-type">
+                </div>
+
+                <!-- search box -->
+                <!-- add /active-search/ class to show input -->
+                <div id="search-box"
+                    class="flex gap-4 h-[39px] justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-[var(--radius-16)] col-span-3">
+                    <div id="search-placeholder" class="flex items-center justify-start">
+                        <span class="caption-4 text-[var(--color-primary)] sm:hidden block">جستجو در</span>
+                        <span class="body-4 opacity-80 text-[var(--color-primary)] sm:block hidden">جستجو...</span>
+                        <img class="sm:hidden" src="images/text-logo.svg" alt="">
+                    </div>
+                    <input id="search-input" class="w-full hidden h-full" type="text">
+                    <div class="w-6! h-6! flex justify-center items-center">
+                        <img class="w-full! h-full!" src="images/search-normal.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- bascet icon -->
+                <div class=" col-span-1 justify-self-end  flex items-center gap-2">
+                    <div class="relative">
+                        <img src="images/shopping-cart-logo.svg" alt="">
+                        <span
+                            class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
+                    </div>
+                    <span class="sm:block hidden">سبد خرید</span>
+
+                </div>
+
+            </nav>
+        </section>
+
+        <!-- hero section  -->
+        <section class=" container  ">
+
+            <div
+                class="relative overflow-hidden mt-10 sm:grid-rows-1 grid-rows-2 grid grid-cols-12 bg-[var(--color-primary-tint-3)] rounded-[var(--radius-16)] sm:pr-16 items-center">
+
+                <!-- hero content -->
+                <div class="sm:col-span-5 col-span-12 sm:row-start-1 row-start-2 p-3">
+                    <h1 class="text-[var(--gray-9)] heading-3 mb-6">آنلاین شاپ کاستومی</h1>
+                    <p class="text-[var(--gray-9)] body-2">
+                        آنلاین شاپ کاستومی محصولات متنوعی داره و این امکان رو بهتون میده خودتون رنگ و طرح و نوشته ی روی
+                        محصولات رو انتخاب کنید.
+                    </p>
+
+                    <!-- hero actions -->
+                    <div>
+                        <button
+                            class="border-1 w-full rounded-[var(--radius-16)] text-[var(--color-primary)] border-[var(--color-primary)] py-3  mt-10 cursor-pointer">دیدن
+                            محصولات</button>
+                    </div>
+                </div>
+
+                <!-- hero img -->
+                <div class="col-span-12 sm:col-span-12 row-start-1 scale-[1.4] sm:scale-100 pl-[41px]">
+                    <img src="images/hero-image.png" alt="">
+                </div>
+
+
+
+                <img class="absolute -top-6 -right-5 hidden sm:block" src="images/right-hero-overlay.svg" alt="">
+                <img class="absolute -left-8 -bottom-5 hidden sm:block" src="images/left-hero-ovarlay.svg" alt="">
             </div>
 
-            <!-- search box -->
-            <!-- add /active-search/ class to show input -->
-            <div id="search-box"
-                class="flex gap-4 justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-[var(--radius-16)] col-span-3">
-                <div id="search-placeholder" class="flex items-center justify-start">
-                    <span class="caption-4 text-[var(--color-primary)] sm:hidden block">جستجو در</span>
-                    <span class="body-4 opacity-80 text-[var(--color-primary)] sm:block hidden">جستجو...</span>
-                    <img class="sm:hidden" src="images/text-logo.svg" alt="">
-                </div>
-                <input id="search-input" class="w-full hidden " type="text">
-                <div class="w-6! h-6! flex justify-center items-center">
-                    <img class="w-full! h-full!" src="images/search-normal.svg" alt="">
-                </div>
-            </div>
 
-            <!-- bascet icon -->
-            <div class=" col-span-1 justify-self-end  flex items-center gap-2">
-                <div class="relative">
-                    <img src="images/shopping-cart-logo.svg" alt="">
-                    <span
-                        class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
-                </div>
-                <span class="sm:block hidden">سبد خرید</span>
 
-            </div>
+        </section>
 
-        </nav>
     </header>
+
+    <main>
+
+        <!-- category -->
+        <section class="container">
+
+            <!-- top of category -->
+            <div class="my-6 flex justify-start items-center gap-2">
+
+                <img class="max-w-8 " src="images/medal-star.svg" alt="">
+                <h4 class="text-[var(--gray-10)] heading-5">دسته بندی محصولات</h4>
+
+
+                <!-- <div class="flex gap-2 items-center">
+
+                    <div class="opacity-50">
+                        <img class="w-[20px] rotate-180" src="images/arrow.svg" alt="">
+                    </div>
+
+                    <div class="">
+                        <img class="w-[20px]" src="images/arrow.svg" alt="">
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- categories -->
+            <div>
+                <ul
+                    class="grid sm:grid-cols-[repeat(6,200px)] grid-cols-[repeat(6,100px)] overflow-x-auto py-4 justify-between gap-2">
+
+                    <li class="">
+                        <a class="category-card" href="category.html?category=mobile-cover">
+                            <img class="w-full" src="images/mobile-cover.png" alt="">
+                            <span class="caption-1">قاب موبایل</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a class="category-card" href="category.html?category=greeting-card">
+                            <img class="w-full" src="images/happy-card.png" alt="">
+                            <span class="caption-1"> کارت تبریک</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a class="category-card" href="category.html?category=accessory">
+                            <img class="w-full" src="images/acsesory.png" alt="">
+                            <span class="caption-1"> اکسسوری</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a class="category-card" href="category.html?category=writing-supplies">
+                            <img class="w-full" src="images/lavazem-tahrir.png" alt="">
+                            <span class="caption-1"> لوازم تحریر</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a class="category-card" href="category.html?category=clothes">
+                            <img class="w-full" src="images/clothes.png" alt="">
+                            <span class="caption-1"> لباس</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a class="category-card" href="category.html?category=home-decor">
+                            <img class="w-full" src="images/home-decor.png" alt="">
+                            <span class="caption-1"> دکور خانه</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </section>
+
+
+     
+    </main>
 
 
     <script src="js/index.js"></script>

@@ -12,7 +12,6 @@
 button,
 input{
     outline: none;
-    border: none;
 }
 
 
@@ -68,18 +67,33 @@ input{
   /* Typography */
   --font-family-base: 'Estedad', sans-serif;
 
+  --heading-3: 800 32px/140% var(--font-family-base);
+  --heading-5: 800 20px/140% var(--font-family-base);
+  --heading-6: 800 18px/140% var(--font-family-base);
+
   --caption-1: 400 14px/180% var(--font-family-base);
   --caption-4: 200 10px/180% var(--font-family-base);
 
   --button-4: 400 16px/180% var(--font-family-base);
 
-  --body-4: 200 14px/180% var(font-family-base)
+  --body-2: 200 18px/180% var(--font-family-base);
+  --body-4: 200 14px/180% var(--font-family-base);
 }
 
 
 .container{
     margin: 0 auto;
-    padding: 0.2rem;
+    padding: 0.6rem;
+}
+
+.heading-3{
+    font: var(--heading-3);
+}
+.heading-5{
+    font: var(--heading-5);
+}
+.heading-6{
+    font: var(--heading-6);
 }
 
 .caption-1{
@@ -93,6 +107,9 @@ input{
     font: var(--button-4);
 }
 
+.body-2{
+    font: var(--body-2);
+}
 .body-4{
     font: var(--body-4);
 }
