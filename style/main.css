@@ -1,7 +1,7 @@
 
 *{
     direction: rtl;
-    font:400 14px/1.2 var(--font-family-base);
+    /* font:400 14px/1.2 var(--font-family-base); */
 }
 
 @font-face {
@@ -76,6 +76,7 @@ input{
 
   --button-4: 400 16px/180% var(--font-family-base);
 
+  --body-1: 200 20px/180% var(--font-family-base);
   --body-2: 200 18px/180% var(--font-family-base);
   --body-4: 200 14px/180% var(--font-family-base);
 }
@@ -84,6 +85,7 @@ input{
 .container{
     margin: 0 auto;
     padding: 0.6rem;
+    max-width: 1300px;
 }
 
 .heading-3{
@@ -107,6 +109,9 @@ input{
     font: var(--button-4);
 }
 
+.body-1{
+    font: var(--body-1);
+}
 .body-2{
     font: var(--body-2);
 }
