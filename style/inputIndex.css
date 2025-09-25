@@ -12,3 +12,8 @@
 .category-card{
     @apply max-w-[200px] cursor-pointer border border-[var(--gray-4)] flex flex-col gap-4 items-center rounded-[var(--radius-16)] px-2 py-2 justify-center;
 }
+
+
+.contact-icon-hover:hover g {
+    @apply fill-[var(--icon-color)] transition-all duration-300;
+}
