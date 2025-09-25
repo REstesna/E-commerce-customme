@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/outputCategory.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <title>دسته بندی محصولات</title>
 </head>
 <body>
     
-    <h1>category</h1>
+    <header>
+         <!-- navbar section  -->
+        <section class="border py-4 border-[var(--gray-4)]">
+            <nav class="container grid grid-cols-5 items-center">
 
+                <!-- logo -->
+                <div class="col-span-1 justify-self-start  flex justify-center items-center">
+                    <img src="images/mobile-logo.svg" alt="mobile-logo">
+                    <img class=" w-[50%] hidden sm:block" src="images/logo-type.svg" alt="logo-type">
+                </div>
+
+                <!-- search box -->
+                <!-- add /active-search/ class to show input -->
+                <div id="search-box"
+                    class="flex gap-4 h-[39px] justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-[var(--radius-16)] col-span-3">
+                    <div id="search-placeholder" class="flex items-center justify-start">
+                        <span class="caption-4 text-[var(--color-primary)] sm:hidden block">جستجو در</span>
+                        <span class="body-4 opacity-80 text-[var(--color-primary)] sm:block hidden">جستجو...</span>
+                        <img class="sm:hidden" src="images/text-logo.svg" alt="">
+                    </div>
+                    <input id="search-input" class="w-full hidden h-full" type="text">
+                    <div class="w-6! h-6! flex justify-center items-center">
+                        <img class="w-full! h-full!" src="images/search-normal.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- bascet icon -->
+                <div class=" col-span-1 justify-self-end  flex items-center gap-2">
+                    <div class="relative">
+                        <img src="images/shopping-cart-logo.svg" alt="">
+                        <span
+                            class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
+                    </div>
+                    <span class="sm:block hidden">سبد خرید</span>
+
+                </div>
+
+            </nav>
+        </section>
+    </header>
+    
+
+
+    <script src="js/navbar.js"></script>
 
 </body>
 </html>
