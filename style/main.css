@@ -63,6 +63,7 @@ input{
   --radius-8: 8px;
   --radius-12: 12px;
   --radius-16: 16px;
+  --radius-24: 24px;
 
   /* Typography */
   --font-family-base: 'Estedad', sans-serif;
@@ -72,13 +73,16 @@ input{
   --heading-6: 800 18px/140% var(--font-family-base);
 
   --caption-1: 400 14px/180% var(--font-family-base);
+  --caption-3: 400 10px/180% var(--font-family-base);
   --caption-4: 200 10px/180% var(--font-family-base);
 
-  --button-4: 400 16px/180% var(--font-family-base);
+  --button-2: 400 16px/180% var(--font-family-base);
 
   --body-1: 200 20px/180% var(--font-family-base);
   --body-2: 200 18px/180% var(--font-family-base);
+  --body-3: 200 16px/180% var(--font-family-base);
   --body-4: 200 14px/180% var(--font-family-base);
+  --body-5: 200 12px/180% var(--font-family-base);
 }
 
 
@@ -101,12 +105,15 @@ input{
 .caption-1{
     font: var(--caption-1);
 }
+.caption-3{
+    font: var(--caption-3);
+}
 .caption-4{
     font: var(--caption-4);
 }
 
 .button-2{
-    font: var(--button-4);
+    font: var(--button-2);
 }
 
 .body-1{
@@ -115,6 +122,12 @@ input{
 .body-2{
     font: var(--body-2);
 }
+.body-3{
+    font: var(--body-3);
+}
 .body-4{
     font: var(--body-4);
+}
+.body-5{
+    font: var(--body-5);
 }

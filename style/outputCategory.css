@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -170,8 +171,17 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
   }
   .-top-1 {
     top: calc(var(--spacing) * -1);
@@ -187,6 +197,9 @@
   }
   .top-1 {
     top: calc(var(--spacing) * 1);
+  }
+  .top-6 {
+    top: calc(var(--spacing) * 6);
   }
   .-right-3 {
     right: calc(var(--spacing) * -3);
@@ -209,6 +222,9 @@
   .left-\[31px\] {
     left: 31px;
   }
+  .z-10 {
+    z-index: 10;
+  }
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -217,6 +233,9 @@
   }
   .col-span-3 {
     grid-column: span 3 / span 3;
+  }
+  .col-span-4 {
+    grid-column: span 4 / span 4;
   }
   .col-span-12 {
     grid-column: span 12 / span 12;
@@ -257,6 +276,12 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -278,14 +303,8 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .h-6 {
-    height: calc(var(--spacing) * 6);
   }
   .h-6\! {
     height: calc(var(--spacing) * 6) !important;
@@ -302,9 +321,6 @@
   .h-full\! {
     height: 100% !important;
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
   .w-6\! {
     width: calc(var(--spacing) * 6) !important;
   }
@@ -313,9 +329,6 @@
   }
   .w-12 {
     width: calc(var(--spacing) * 12);
-  }
-  .w-\[20px\] {
-    width: 20px;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -335,8 +348,8 @@
   .max-w-\[15px\] {
     max-width: 15px;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .min-w-6 {
+    min-width: calc(var(--spacing) * 6);
   }
   .scale-\[1\.4\] {
     scale: 1.4;
@@ -350,11 +363,11 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize {
-    resize: both;
-  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -395,8 +408,14 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -406,6 +425,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-18 {
+    gap: calc(var(--spacing) * 18);
   }
   .justify-self-end {
     justify-self: flex-end;
@@ -419,8 +441,14 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
+  .rounded-\[var\(--radius-8\)\] {
+    border-radius: var(--radius-8);
+  }
   .rounded-\[var\(--radius-16\)\] {
     border-radius: var(--radius-16);
+  }
+  .rounded-\[var\(--radius-24\)\] {
+    border-radius: var(--radius-24);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -428,6 +456,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -455,6 +487,9 @@
   .bg-\[var\(--color-primary-tint-5\)\] {
     background-color: var(--color-primary-tint-5);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/assets\.architecturaldigest\.in\/photos\/62026064b5d9eefa7e4e2ddf\/4\:3\/w_1439\,h_1079\,c_limit\/How\%20to\%20furnish\%20your\%20home\%20on\%20a\%20budget\.jpg\'\)\] {
     background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/4:3/w_1439,h_1079,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg');
   }
@@ -479,6 +514,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -494,8 +532,8 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pl-\[41px\] {
     padding-left: 41px;
@@ -512,11 +550,11 @@
   .text-\[15px\] {
     font-size: 15px;
   }
+  .text-\[16px\]\! {
+    font-size: 16px !important;
+  }
   .text-nowrap {
     text-wrap: nowrap;
-  }
-  .text-wrap {
-    text-wrap: wrap;
   }
   .text-\[var\(--color-primary\)\] {
     color: var(--color-primary);
@@ -539,21 +577,11 @@
   .underline {
     text-decoration-line: underline;
   }
-  .opacity-50 {
-    opacity: 50%;
-  }
   .opacity-80 {
     opacity: 80%;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .blur {
     --tw-blur: blur(8px);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
@@ -579,6 +607,11 @@
       }
     }
   }
+  .sm\:static {
+    @media (width >= 40rem) {
+      position: static;
+    }
+  }
   .sm\:left-10 {
     @media (width >= 40rem) {
       left: calc(var(--spacing) * 10);
@@ -587,6 +620,11 @@
   .sm\:left-\[77px\]\! {
     @media (width >= 40rem) {
       left: 77px !important;
+    }
+  }
+  .sm\:col-span-3 {
+    @media (width >= 40rem) {
+      grid-column: span 3 / span 3;
     }
   }
   .sm\:col-span-5 {
@@ -632,6 +670,11 @@
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
+  .sm\:grid-cols-3 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .sm\:grid-cols-4 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -657,6 +700,17 @@
       gap: calc(var(--spacing) * 5);
     }
   }
+  .sm\:gap-10 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:border {
+    @media (width >= 40rem) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
   .sm\:p-6 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 6);
@@ -676,6 +730,11 @@
     @media (width >= 40rem) {
       font-size: var(--text-2xl) !important;
       line-height: var(--tw-leading, var(--text-2xl--line-height)) !important;
+    }
+  }
+  .sm\:text-\[18px\] {
+    @media (width >= 40rem) {
+      font-size: 18px;
     }
   }
   .sm\:text-\[20px\] {
@@ -707,6 +766,39 @@
 .active-search #search-input {
   display: block;
 }
+.pagination-item {
+  display: flex;
+  height: calc(var(--spacing) * 8);
+  width: calc(var(--spacing) * 8);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(infinity * 1px);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--gray-8);
+  text-align: center;
+  font-size: 16px;
+  --tw-font-weight: 200;
+  font-weight: 200;
+}
+.ts-wrapper {
+  width: 100%;
+}
+.ts-control {
+  cursor: pointer;
+  border-top-style: var(--tw-border-style) !important;
+  border-top-width: 0px !important;
+  border-right-style: var(--tw-border-style) !important;
+  border-right-width: 0px !important;
+  border-bottom-style: var(--tw-border-style) !important;
+  border-bottom-width: 1px !important;
+  border-left-style: var(--tw-border-style) !important;
+  border-left-width: 0px !important;
+  border-bottom-color: var(--gray-4) !important;
+  padding-inline: calc(var(--spacing) * 0) !important;
+  padding-block: calc(var(--spacing) * 4) !important;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -728,11 +820,6 @@
   inherits: false;
 }
 @property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -826,7 +913,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

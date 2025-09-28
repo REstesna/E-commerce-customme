@@ -15,5 +15,5 @@
 
 
 .contact-icon-hover:hover g {
-    @apply fill-[var(--icon-color)] transition-all duration-300;
+    @apply fill-[var(--icon-color)] transition-all duration-300 ;
 }
