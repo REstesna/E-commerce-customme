@@ -43,7 +43,7 @@ input{
   --gray-6: #AFAFAF;
   --gray-7: #888889;
   --gray-8: #656565;
-  --gray-9: #461C23;
+  --gray-9: #641C23;
   --gray-10: #242424;
 
   /* States */
@@ -69,6 +69,7 @@ input{
   --font-family-base: 'Estedad', sans-serif;
 
   --heading-3: 800 32px/140% var(--font-family-base);
+  --heading-4: 800 24px/140% var(--font-family-base);
   --heading-5: 800 20px/140% var(--font-family-base);
   --heading-6: 800 18px/140% var(--font-family-base);
 
@@ -94,6 +95,9 @@ input{
 
 .heading-3{
     font: var(--heading-3);
+}
+.heading-4{
+    font: var(--heading-4);
 }
 .heading-5{
     font: var(--heading-5);
