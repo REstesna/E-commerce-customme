@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+
+.active-search #search-placeholder{
+    @apply hidden;
+}
+.active-search #search-input{
+    @apply block;
+}

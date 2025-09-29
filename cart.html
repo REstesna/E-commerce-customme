@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/outputCart.css">
+    <title>سبد خرید</title>
 </head>
 <body>
+
+    <header>
+        
+        <!-- navbar section  -->
+        <section class="border py-4 border-[var(--gray-4)]">
+            <nav class="container grid grid-cols-5 items-center">
+
+                <!-- logo -->
+                <a href="/index.html" class="col-span-1 justify-self-start  flex justify-center items-center">
+                    <img src="images/mobile-logo.svg" alt="mobile-logo">
+                    <img class=" w-[50%] hidden sm:block" src="images/logo-type.svg" alt="logo-type">
+                </a>
+
+                <!-- search box -->
+                <!-- add /active-search/ class to show input -->
+                <div id="search-box"
+                    class="flex gap-4 h-[39px] justify-between items-center border-2 border-[var(--gray-4)] py-2 px-4 rounded-[var(--radius-16)] col-span-3">
+                    <div id="search-placeholder" class="flex items-center justify-start">
+                        <span class="caption-4 text-[var(--color-primary)] sm:hidden block">جستجو در</span>
+                        <span class="body-4 opacity-80 text-[var(--color-primary)] sm:block hidden">جستجو...</span>
+                        <img class="sm:hidden" src="images/text-logo.svg" alt="">
+                    </div>
+                    <input id="search-input" class="w-full hidden h-full" type="text">
+                    <div class="w-6! h-6! flex justify-center items-center">
+                        <img class="w-full! h-full!" src="images/search-normal.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- bascet icon -->
+                <a href="/cart.html" class=" col-span-1 justify-self-end  flex items-center gap-2">
+                    <div class="relative">
+                        <img src="images/shopping-cart-logo.svg" alt="">
+                        <span
+                            class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
+                    </div>
+                    <span class="sm:block hidden">سبد خرید</span>
+
+                </a>
+
+            </nav>
+        </section>
+
+    </header>
     
+
+    <main>
+
+        <section class="container">
+
+            <div>
+
+                <!-- cart products -->
+                 <div>
+                    
+                 </div>
+
+                <!-- offer code section -->
+                 <div>
+
+                 </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-[var(--color-primary)] pt-10 mt-10">
+
+        <section class="container ">
+
+            <h4 class="caption-1 text-center mb-2 text-white">من را در شبکه های اجتماعی دنبال کنید</h4>
+
+            <div class="flex justify-center items-center gap-4">
+
+                <!-- instagram -->
+                <a href="https://www.instagram.com/real.rellax" target="_blank">
+                    <svg class="hover:scale-120 transition-all duration-300 ease-in" fill="#ffffff" width="33px"
+                        height="33px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z" />
+                        <path
+                            d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z" />
+                    </svg>
+                </a>
+
+                <!-- github -->
+                <a href="https://github.com/REstesna" target="_blank">
+                    <svg class="hover:scale-120 transition-all duration-300 ease-in" style="--icon-color: #8134af;"
+                        width="24px" height="24px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
+                                fill="#ffffff">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                        id="github-[#142]">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+
+
+            </div>
+        </section>
+
+        <div class="bg-[var(--color-primary-shade-7)] text-center py-2 mt-2">
+            <a class="body-4 text-center text-white" href="/about.html">
+                برای توضیحاتی درباره این پروژه کلیک کنید.
+            </a>
+        </div>
+
+    </footer>
+
 </body>
 </html>
