@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -237,6 +238,12 @@
   .col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+  .col-span-10 {
+    grid-column: span 10 / span 10;
+  }
   .col-span-12 {
     grid-column: span 12 / span 12;
   }
@@ -267,6 +274,9 @@
       max-width: 96rem;
     }
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
@@ -278,6 +288,9 @@
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -508,6 +521,9 @@
   .bg-\[var\(--color-primary-tint-5\)\] {
     background-color: var(--color-primary-tint-5);
   }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -676,6 +692,11 @@
   .sm\:col-span-5 {
     @media (width >= 40rem) {
       grid-column: span 5 / span 5;
+    }
+  }
+  .sm\:col-span-9 {
+    @media (width >= 40rem) {
+      grid-column: span 9 / span 9;
     }
   }
   .sm\:col-span-12 {

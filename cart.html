@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/outputCart.css">
     <title>سبد خرید</title>
 </head>
-<body>
+<body class="">
 
     <header>
         
@@ -53,19 +53,358 @@
     </header>
     
 
-    <main>
+    <main class="flex-1">
 
-        <section class="container">
+        <section class="container ">
 
-            <div>
+            <div class="mt-10 grid grid-cols-12 gap-4">
 
                 <!-- cart products -->
-                 <div>
+                 <div class="sm:col-span-9 col-span-12"> 
                     
+                    <!-- title  -->
+                    <div class="flex items-center gap-1">
+                        <img class="sm:hidden" src="images/arrow-right-2.svg" alt="">
+                        <h6 class="body-3">
+                            سبد خرید
+                        </h6>
+                    </div>
+                    <hr class="text-[var(--gray-4)] mt-2" />
+
+                    <!-- products -->
+                     <ul class="pt-4 divide-y">
+
+
+                        <li class="py-2 border-b border-b-[var(--gray-4)]">
+
+                            <!-- top  -->
+
+                            <div class="grid grid-cols-12 gap-6">
+                                
+                                        
+
+                                <div class="flex items-center gap-4  col-span-3">
+
+                                    <button class="cursor-pointer sm:block hidden">
+                                            <img class="min-w-5" src="images/close-square.svg" alt="">
+
+                                        </button>
+                                
+                                    <img class="col-span-3 max-w-20 rounded-[var(--radius-8)]" src="images/female-Tshirt.png" alt="">
+
+                                </div>
+
+                                <div class="col-span-9 flex flex-col sm:flex-row justify-between gap-2">
+
+                                    <!-- title  -->
+                                    <div class="flex justify-between items-center">
+
+                                        <p class="caption-3 sm:font-[400]! sm:text-[14px]! text-[var(--gray-10)]">
+                                            تیشرت سفید طرح دار
+                                        </p>
+
+                                        <button class="sm:hidden">
+                                            <img class="" src="images/close-square.svg" alt="">
+                                        </button>
+
+                                    </div>
+
+                                    
+                                          <!-- quantity -->
+                                    <div class="flex justify-between  items-center sm:order-1 sm:w-[50%] sm:justify-end">
+
+                                        <span class="caption-3 sm:hidden text-[var(--gray-10)]">
+                                            تعداد:
+                                        </span>
+
+                                        <div class="caption-1 flex justify-between items-center gap-1 text-[var(--gray-9)] border border-[var(--gray-4)] rounded-[var(--radius-8)] ">
+
+                                            <button class="px-2 cursor-pointer border-l border-[var(--gray-4)]">+</button>
+                                            <span class="px-1">0</span>
+                                            <button class="px-2 cursor-pointer border-r border-[var(--gray-4)]">-</button>
+
+                                        </div>
+
+                                    </div>
+
+                               
+
+                                    <!-- price  -->
+                                     <div class="flex justify-between items-center"> 
+                                        <span class="caption-3 sm:hidden text-[var(--gray-10)]">
+                                            قیمت: 
+                                        </span>
+
+                                        <span class="caption-3 sm:font-[400]! sm:text-[14px]! text-[var(--gray-10)]">
+                                            444,000 تومان
+                                        </span>
+                                     </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- bottom  -->
+                             <div>
+
+                                <div class="flex justify-start mt-3 sm:justify-end items-center gap-2">
+                                    <img src="images/truck-fast.svg" alt="truck">
+                                    <span class="body-4"> 
+                                        ارسال از 3 روز آینده
+                                    </span>
+                                </div>
+
+                             </div>
+
+                        </li>
+
+                      
+
+                        <li class="py-2 border-b border-b-[var(--gray-4)]">
+
+                            <!-- top  -->
+
+                            <div class="grid grid-cols-12 gap-6">
+                                
+                                        
+
+                                <div class="flex items-center gap-4  col-span-3">
+
+                                    <button class="cursor-pointer sm:block hidden">
+                                            <img class="min-w-5" src="images/close-square.svg" alt="">
+
+                                        </button>
+                                
+                                    <img class="col-span-3 max-w-20 rounded-[var(--radius-8)]" src="images/female-Tshirt.png" alt="">
+
+                                </div>
+
+                                <div class="col-span-9 flex flex-col sm:flex-row justify-between gap-2">
+
+                                    <!-- title  -->
+                                    <div class="flex justify-between items-center">
+
+                                        <p class="caption-3 sm:font-[400]! sm:text-[14px]! text-[var(--gray-10)]">
+                                            تیشرت سفید طرح دار
+                                        </p>
+
+                                        <button class="sm:hidden">
+                                            <img class="" src="images/close-square.svg" alt="">
+                                        </button>
+
+                                    </div>
+
+                                    
+                                          <!-- quantity -->
+                                    <div class="flex justify-between  items-center sm:order-1 sm:w-[50%] sm:justify-end">
+
+                                        <span class="caption-3 sm:hidden text-[var(--gray-10)]">
+                                            تعداد:
+                                        </span>
+
+                                        <div class="caption-1 flex justify-between items-center gap-1 text-[var(--gray-9)] border border-[var(--gray-4)] rounded-[var(--radius-8)] ">
+
+                                            <button class="px-2 cursor-pointer border-l border-[var(--gray-4)]">+</button>
+                                            <span class="px-1">0</span>
+                                            <button class="px-2 cursor-pointer border-r border-[var(--gray-4)]">-</button>
+
+                                        </div>
+
+                                    </div>
+
+                               
+
+                                    <!-- price  -->
+                                     <div class="flex justify-between items-center"> 
+                                        <span class="caption-3 sm:hidden text-[var(--gray-10)]">
+                                            قیمت: 
+                                        </span>
+
+                                        <span class="caption-3 sm:font-[400]! sm:text-[14px]! text-[var(--gray-10)]">
+                                            444,000 تومان
+                                        </span>
+                                     </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- bottom  -->
+                             <div>
+
+                                <div class="flex justify-start mt-3 sm:justify-end items-center gap-2">
+                                    <img src="images/truck-fast.svg" alt="truck">
+                                    <span class="body-4"> 
+                                        ارسال از 3 روز آینده
+                                    </span>
+                                </div>
+
+                             </div>
+
+                        </li>
+
+                      
+
+                        <li class="py-2 border-b border-b-[var(--gray-4)]">
+
+                            <!-- top  -->
+
+                            <div class="grid grid-cols-12 gap-6">
+                                
+                                        
+
+                                <div class="flex items-center gap-4  col-span-3">
+
+                                    <button class="cursor-pointer sm:block hidden">
+                                            <img class="min-w-5" src="images/close-square.svg" alt="">
+
+                                        </button>
+                                
+                                    <img class="col-span-3 max-w-20 rounded-[var(--radius-8)]" src="images/female-Tshirt.png" alt="">
+
+                                </div>
+
+                                <div class="col-span-9 flex flex-col sm:flex-row justify-between gap-2">
+
+                                    <!-- title  -->
+                                    <div class="flex justify-between items-center">
+
+                                        <p class="caption-3 sm:font-[400]! sm:text-[14px]! text-[var(--gray-10)]">
+                                            تیشرت سفید طرح دار
+                                        </p>
+
+                                        <button class="sm:hidden">
+                                            <img class="" src="images/close-square.svg" alt="">
+                                        </button>
+
+                                    </div>
+
+                                    
+                                          <!-- quantity -->
+                                    <div class="flex justify-between  items-center sm:order-1 sm:w-[50%] sm:justify-end">
+
+                                        <span class="caption-3 sm:hidden text-[var(--gray-10)]">
+                                            تعداد:
+                                        </span>
+
+                                        <div class="caption-1 flex justify-between items-center gap-1 text-[var(--gray-9)] border border-[var(--gray-4)] rounded-[var(--radius-8)] ">
+
+                                            <button class="px-2 cursor-pointer border-l border-[var(--gray-4)]">+</button>
+                                            <span class="px-1">0</span>
+                                            <button class="px-2 cursor-pointer border-r border-[var(--gray-4)]">-</button>
+
+                                        </div>
+
+                                    </div>
+
+                               
+
+                                    <!-- price  -->
+                                     <div class="flex justify-between items-center"> 
+                                        <span class="caption-3 sm:hidden text-[var(--gray-10)]">
+                                            قیمت: 
+                                        </span>
+
+                                        <span class="caption-3 sm:font-[400]! sm:text-[14px]! text-[var(--gray-10)]">
+                                            444,000 تومان
+                                        </span>
+                                     </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- bottom  -->
+                             <div>
+
+                                <div class="flex justify-start mt-3 sm:justify-end items-center gap-2">
+                                    <img src="images/truck-fast.svg" alt="truck">
+                                    <span class="body-4"> 
+                                        ارسال از 3 روز آینده
+                                    </span>
+                                </div>
+
+                             </div>
+
+                        </li>
+
+                      
+
+
+                     </ul>
+
                  </div>
 
-                <!-- offer code section -->
-                 <div>
+
+                 <!-- left cart page section  -->
+                 <div class="col-span-12 sm:col-span-3">
+                     
+                     <!-- offer code section -->
+                    
+                    <div class="p-6 sticky top-6 border rounded-[var(--radius-16)] border-[var(--gray-4)]">
+
+                        <span class="block body-4 text-[var(--gray-10)]">
+                            کد تخفیف
+                        </span>
+
+                        <p class="caption-4 text-[var(--gray-9)]">
+                            کد تخفیف کد معرف کارت هادیه خود را در زیر وارد کرده و دکمه ثبت رو بزنید تا در صورت داشتن اعتبار به سفارش شما اعمال شود.
+                        </p>
+
+
+                        <!-- input offer code section  -->
+                        <div class="flex justify-between items-center gap-2 my-4">
+                            <input class="border rounded-[var(--radius-8)] h-full py-[6px] px-2 body-4 border-[var(--gray-4)]" type="text">
+
+                            <button class="button-2 text-[var(--color-primary)] border rounded-[var(--radius-8)] border-[var(--primary-color)] py-1 w-full cursor-pointer hover:bg-[rgba(0,0,0,0.05)] transition-all duration-200">
+                                ثبت
+                            </button>
+                        </div>
+
+                        <hr class="text-[var(--gray-4)]" />
+                        
+                        <!-- final price withot offer -->
+                        <div class="flex justify-between items-center body-4 mt-2 text-[var(--gray-9)]">
+                            <span>
+                                قیمت کالاها
+                            </span>
+
+                            <span>
+                                244,000
+                            </span>
+                        </div>
+
+                        <!--  offer price -->
+                        <div class="flex justify-between items-center body-4 mt-2 text-[var(--gray-9)]">
+                            <span class="flex justify-center items-center gap-2">
+                                <img class="max-w-5" src="images/receipt-disscount.svg" alt="">
+                            مجموع تخفیف
+                            </span>
+
+                            <span>
+                                244,000
+                            </span>
+                        </div>
+
+
+                        <hr class="mt-4 text-[var(--gray-4)]" />
+
+                          <!--  final price -->
+                        <div class="flex justify-between items-center body-4 mt-2 text-[var(--gray-9)]">
+                            <span class="flex justify-center items-center gap-2">
+                           جمع قابل پرداخت
+                            </span>
+
+                            <span>
+                                444,000
+                            </span>
+                        </div>
+
+                    </div>
+
 
                  </div>
 
@@ -131,6 +470,8 @@
         </div>
 
     </footer>
+
+    <script src="js/navbar.js"></script>
 
 </body>
 </html>
