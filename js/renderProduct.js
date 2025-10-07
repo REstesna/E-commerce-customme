@@ -25,7 +25,7 @@ export const generateProductInContainer = (container, products) => {
 
     container.innerHTML += ` <li class="max-w-[400px] p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
                             <!-- product image -->
-                            <a href="/detail-product.html?id=${p.id}">
+                            <a href="./detail-product.html?id=${p.id}">
                                 <div class="aspect-square flex justify-center items-center overflow-hidden rounded-[var(--radius-8)]"><img class="w-full" loading="lazy" src="${
                                   p.img
                                 }" alt="${p.title}"></div>
@@ -36,7 +36,7 @@ export const generateProductInContainer = (container, products) => {
                                 <!-- title and like -->
                                 <div class="flex justify-between gap-1 items-start my-4">
 
-                                    <a href="/detail-product.html?id=${p.id}">
+                                    <a href="./detail-product.html?id=${p.id}">
                                         <h6 class="heading-6 sm:text-[18px] text-[16px]! "> ${
                                           p.title
                                         } </h6>
@@ -57,7 +57,7 @@ export const generateProductInContainer = (container, products) => {
 
                                 <!-- caption & price  -->
                                 <div>
-                                    <a href="/detail-product.html?id=${p.id}">
+                                    <a href="./detail-product.html?id=${p.id}">
                                         <div class="flex justify-between gap-18 sm:gap-10 flex-col">
                                             <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
                                             <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">
