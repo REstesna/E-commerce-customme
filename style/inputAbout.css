@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+.active-search #search-placeholder{
+    @apply hidden;
+}
+.active-search #search-input{
+    @apply block;
+}
+
+
+
+html, body {
+
+
+  @apply flex flex-col h-full;
+}
+
+main {
+  @apply flex-1
+}
+
+
+#content-container span {
+    @apply hover:text-[var(--color-primary)] transition-all duration-100 hover:font-[400] cursor-pointer select-none 
+}

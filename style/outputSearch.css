@@ -316,8 +316,14 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
   }
   .h-6\! {
     height: calc(var(--spacing) * 6) !important;
@@ -339,6 +345,9 @@
   }
   .min-h-40 {
     min-height: calc(var(--spacing) * 40);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-6\! {
     width: calc(var(--spacing) * 6) !important;
@@ -385,6 +394,9 @@
   .flex-1 {
     flex: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .scale-\[1\.4\] {
     scale: 1.4;
   }
@@ -396,6 +408,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -557,6 +572,15 @@
   .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/assets\.architecturaldigest\.in\/photos\/62026064b5d9eefa7e4e2ddf\/4\:3\/w_1439\,h_1079\,c_limit\/How\%20to\%20furnish\%20your\%20home\%20on\%20a\%20budget\.jpg\'\)\] {
     background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/4:3/w_1439,h_1079,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg');
   }
+  .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/owlgallery\.ir\/wp-content\/uploads\/2023\/08\/photo_\%DB\%B2\%DB\%B0\%DB\%B2\%DB\%B3-\%DB\%B0\%DB\%B8-\%DB\%B1\%DB\%B6_\%DB\%B1\%DB\%B9-\%DB\%B1\%DB\%B7-\%DB\%B2\%DB\%B1\.jpg\'\)\] {
+    background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://owlgallery.ir/wp-content/uploads/2023/08/photo_%DB%B2%DB%B0%DB%B2%DB%B3-%DB%B0%DB%B8-%DB%B1%DB%B6_%DB%B1%DB%B9-%DB%B1%DB%B7-%DB%B2%DB%B1.jpg');
+  }
+  .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/padmira\.ir\/upload\/product\/thumb_\%D8\%B3\%D8\%AA-\%DA\%A9\%D8\%AA-\%D9\%88-\%D8\%AF\%D8\%A7\%D9\%85\%D9\%86-\%281\%29_1751283352\.jpg\'\)\] {
+    background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://padmira.ir/upload/product/thumb_%D8%B3%D8%AA-%DA%A9%D8%AA-%D9%88-%D8%AF%D8%A7%D9%85%D9%86-%281%29_1751283352.jpg');
+  }
+  .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/royal-cover\.com\/wp-content\/uploads\/2025\/04\/10-1\.jpg\'\)\] {
+    background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://royal-cover.com/wp-content/uploads/2025/04/10-1.jpg');
+  }
   .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/www\.laylacollection\.com\/cdn\/shop\/articles\/accessory_1100x\.jpg\?v\=1608881077\'\)\] {
     background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://www.laylacollection.com/cdn/shop/articles/accessory_1100x.jpg?v=1608881077');
   }
@@ -644,11 +668,17 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .text-\[var\(--color-primary\)\] {
     color: var(--color-primary);
   }
   .text-\[var\(--color-primary-tint-3\)\] {
     color: var(--color-primary-tint-3);
+  }
+  .text-\[var\(--gray\)\] {
+    color: var(--gray);
   }
   .text-\[var\(--gray-4\)\] {
     color: var(--gray-4);
@@ -671,8 +701,15 @@
   .opacity-80 {
     opacity: 80%;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .blur {
     --tw-blur: blur(8px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
@@ -837,6 +874,11 @@
       gap: calc(var(--spacing) * 5);
     }
   }
+  .sm\:gap-6 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:gap-10 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 10);
@@ -908,6 +950,14 @@
     }
   }
 }
+html, body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
 .active-search #search-placeholder {
   display: none;
 }
@@ -940,6 +990,11 @@
   initial-value: 0;
 }
 @property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -1034,6 +1089,7 @@
       --tw-skew-y: initial;
       --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

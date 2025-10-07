@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/outputCart.css">
-
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/outputSearch.css">
     <link rel="shortcut icon" href="images/mobile-logo.svg" type="image/x-icon">
 
-    <title>سبد خرید</title>
+    <title> Search </title>
 </head>
+
 <body class="">
 
     <header>
-        
+
         <!-- navbar section  -->
         <section class="border py-4 border-[var(--gray-4)]">
             <nav class="container grid grid-cols-5 items-center">
@@ -54,114 +55,32 @@
         </section>
 
     </header>
-    
-
-    <main class="flex-1">
-
-        <section class="container ">
-
-            <div class="mt-10 grid grid-cols-12 gap-4">
-
-                <!-- cart products -->
-                 <div class="sm:col-span-9 col-span-12"> 
-                    
-                    <!-- title  -->
-                    <div class="flex items-center gap-1">
-                        <img id="go-back-button" class="sm:hidden" src="images/arrow-right-2.svg" alt="">
-                        <h6 class="body-3">
-                            سبد خرید
-                        </h6>
-                    </div>
-                    <hr class="text-[var(--gray-4)] mt-2" />
-
-                    <!-- products -->
-                     <ul id="basket-products" class="pt-4 divide-y">
-
-<h4 class="body-1 text-center text-[var(--gray-10)]">
-                    سبد خرید شما خالی است.
-                </h4>
-                      
 
 
-                     </ul>
+    <main class="mt-10">
 
-                 </div>
-
-
-                 <!-- left cart page section  -->
-                 <div class="col-span-12 sm:col-span-3">
-                     
-                     <!-- offer code section -->
-                    
-                    <div class="p-6 sticky top-6 border rounded-[var(--radius-16)] border-[var(--gray-4)]">
-
-                        <span class="block body-4 text-[var(--gray-10)]">
-                            کد تخفیف
-                        </span>
-
-                        <p class="caption-4 text-[var(--gray-9)]">
-                            کد تخفیف کد معرف کارت هادیه خود را در زیر وارد کرده و دکمه ثبت رو بزنید تا در صورت داشتن اعتبار به سفارش شما اعمال شود. (کد تخفیف: relax)
-                        </p>
+        <section class="container">
 
 
-                        <!-- input offer code section  -->
-                        <div class="flex justify-between items-center gap-2 my-4">
-                            <input id="input-discount-code" class="border rounded-[var(--radius-8)] h-full py-[6px] px-2 body-4 border-[var(--gray-4)]" type="text">
+            <h3 id="searched-for" class="heading-4 text-[var(--gray-10)]">
+                نتایج برای:
+            </h3>
 
-                            <button id="confirm-discount-code" class="button-2 text-[var(--color-primary)] border rounded-[var(--radius-8)] border-[var(--primary-color)] py-1 w-full cursor-pointer hover:bg-[rgba(0,0,0,0.05)] transition-all duration-200">
-                                ثبت
-                            </button>
-                        </div>
-
-                        <hr class="text-[var(--gray-4)]" />
-                        
-                        <!-- final price withot offer -->
-                        <div class="flex justify-between items-center body-4 mt-2 text-[var(--gray-9)]">
-                            <span>
-                                قیمت کالاها
-                            </span>
-
-                            <span id="products-price">
-                                ---
-                            </span>
-                        </div>
-
-                        <!--  offer price -->
-                        <div class="flex justify-between items-center body-4 mt-2 text-[var(--gray-9)]">
-                            <span class="flex justify-center items-center gap-2">
-                                <img class="max-w-5" src="images/receipt-disscount.svg" alt="">
-                            مجموع تخفیف
-                            </span>
-
-                            <span id="discount-price">
-                                ---
-                            </span>
-                        </div>
+            <hr class="mt-4 text-[var(--gray-4)]">
 
 
-                        <hr class="mt-4 text-[var(--gray-4)]" />
-
-                          <!--  final price -->
-                        <div class="flex justify-between items-center body-4 mt-2 text-[var(--gray-9)]">
-                            <span class="flex justify-center items-center gap-2">
-                           جمع قابل پرداخت
-                            </span>
-
-                            <span id="final-price">
-                               ---
-                            </span>
-                        </div>
-
-                    </div>
+            <!-- products -->
+            <ul id="search-products"
+                class="grid md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] grid-cols-2 gap-2 sm:gap-6 my-10">
 
 
-                 </div>
-
-            </div>
+            </ul>
 
         </section>
 
     </main>
+
+
 
     <footer class="bg-[var(--color-primary)] pt-10 mt-10">
 
@@ -220,8 +139,10 @@
 
     </footer>
 
+
     <script type="module" src="js/navbar.js"></script>
-    <script type="module" src="js/cart.js"></script>
+    <script type="module" src="js/search.js"></script>
 
 </body>
+
 </html>

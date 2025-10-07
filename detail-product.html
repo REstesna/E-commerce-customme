@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/outputProductDetail.css">
 
+    <link rel="shortcut icon" href="images/mobile-logo.svg" type="image/x-icon">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <title>محصول</title>
 </head>
 
@@ -44,7 +47,7 @@
                 <a href="/cart.html" class=" col-span-1 justify-self-end  flex items-center gap-2">
                     <div class="relative">
                         <img src="images/shopping-cart-logo.svg" alt="">
-                        <span
+                        <span id="count_of_products_in_basket"
                             class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
                     </div>
                     <span class="sm:block hidden">سبد خرید</span>
@@ -63,30 +66,26 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2">
                 <!-- product photo -->
-                <div class="w-full flex justify-center">
-                    <img class="w-full sm:w-[70%]" src="images/female-Tshirt.png" alt="">
+                <div class="w-full flex  justify-center">
+                    <img id="product-image" class="w-full aspect-square overflow-hidden rounded-[var(--radius-8)] sm:w-[70%]" src="" alt="اگر عکس لود نمیشود وی پی ان خود را خاموش کنید صفحه را رفرش کنید.">
                 </div>
 
                 <!-- product info & add to cart -->
                 <div class="py-8">
                     <!-- product caption -->
-                    <div class="flex flex-col gap-6">
-                        <h1 class="heading-4 text-[var(--color-primary)]"> مشخصات محصول </h1>
+                    <div class="flex flex-col gap-6 ">
+                        <h1 id="product-title" class="heading-4 text-[var(--color-primary)]">  </h1>
 
-                        <ul>
-                            <li class="body-1 text-[var(--gray-8)]"> جنس: نخ، پلی استر </li>
-                            <li class="body-1 text-[var(--gray-8)]"> جنس: نخ، پلی استر </li>
-                            <li class="body-1 text-[var(--gray-8)]"> جنس: نخ، پلی استر </li>
-                            <li class="body-1 text-[var(--gray-8)]"> جنس: نخ، پلی استر </li>
-                            <li class="body-1 text-[var(--gray-8)]"> جنس: نخ، پلی استر </li>
-                        </ul>
+                        <p id="product-description" class="body-1 text-[var(--gray-8)] block h-full min-h-40 max-h-40 overflow-y-auto">
+                            
+                        </p>
                     </div>
 
                     <!-- product price -->
-                    <h4 class="heading-4 text-[var(--gray-10)] text-left mt-6">444,000 تومان</h4>
+                    <h4 id="product-price" class="heading-4 text-[var(--gray-10)] text-left mt-6"> </h4>
 
                     <div class="w-full flex justify-end items-center mt-8">
-                        <button
+                        <button id="add-to-cart-btn"
                             class="flex items-center justify-between gap-2 bg-[var(--color-primary)] rounded-[var(--radius-8)] py-3 text-white px-6 cursor-pointer">
 
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
@@ -177,8 +176,9 @@
     </footer>
 
 
-    <script src="js/navbar.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script type="module" src="js/navbar.js"></script>
+    <script type="module" src="js/product-detail.js"></script>
 </body>
 
 </html>

@@ -7,8 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-amber-950: oklch(27.9% 0.077 45.635);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -202,9 +202,6 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
-  .top-10 {
-    top: calc(var(--spacing) * 10);
-  }
   .-right-3 {
     right: calc(var(--spacing) * -3);
   }
@@ -343,6 +340,12 @@
   .h-full\! {
     height: 100% !important;
   }
+  .max-h-40 {
+    max-height: calc(var(--spacing) * 40);
+  }
+  .min-h-40 {
+    min-height: calc(var(--spacing) * 40);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -378,6 +381,9 @@
   }
   .max-w-\[15px\] {
     max-width: 15px;
+  }
+  .max-w-\[400px\] {
+    max-width: 400px;
   }
   .min-w-5 {
     min-width: calc(var(--spacing) * 5);
@@ -493,6 +499,9 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
   .rounded-\[var\(--radius-8\)\] {
     border-radius: var(--radius-8);
   }
@@ -562,6 +571,15 @@
   }
   .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/assets\.architecturaldigest\.in\/photos\/62026064b5d9eefa7e4e2ddf\/4\:3\/w_1439\,h_1079\,c_limit\/How\%20to\%20furnish\%20your\%20home\%20on\%20a\%20budget\.jpg\'\)\] {
     background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/4:3/w_1439,h_1079,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg');
+  }
+  .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/owlgallery\.ir\/wp-content\/uploads\/2023\/08\/photo_\%DB\%B2\%DB\%B0\%DB\%B2\%DB\%B3-\%DB\%B0\%DB\%B8-\%DB\%B1\%DB\%B6_\%DB\%B1\%DB\%B9-\%DB\%B1\%DB\%B7-\%DB\%B2\%DB\%B1\.jpg\'\)\] {
+    background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://owlgallery.ir/wp-content/uploads/2023/08/photo_%DB%B2%DB%B0%DB%B2%DB%B3-%DB%B0%DB%B8-%DB%B1%DB%B6_%DB%B1%DB%B9-%DB%B1%DB%B7-%DB%B2%DB%B1.jpg');
+  }
+  .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/padmira\.ir\/upload\/product\/thumb_\%D8\%B3\%D8\%AA-\%DA\%A9\%D8\%AA-\%D9\%88-\%D8\%AF\%D8\%A7\%D9\%85\%D9\%86-\%281\%29_1751283352\.jpg\'\)\] {
+    background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://padmira.ir/upload/product/thumb_%D8%B3%D8%AA-%DA%A9%D8%AA-%D9%88-%D8%AF%D8%A7%D9%85%D9%86-%281%29_1751283352.jpg');
+  }
+  .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/royal-cover\.com\/wp-content\/uploads\/2025\/04\/10-1\.jpg\'\)\] {
+    background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://royal-cover.com/wp-content/uploads/2025/04/10-1.jpg');
   }
   .bg-\[linear-gradient\(to_top\,\#000000_0\%\,rgba\(0\,0\,0\,0\.1\)_50\%\,rgba\(0\,0\,0\,0\)_100\%\)\,url\(\'https\:\/\/www\.laylacollection\.com\/cdn\/shop\/articles\/accessory_1100x\.jpg\?v\=1608881077\'\)\] {
     background-image: linear-gradient(to top,#000000 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0) 100%),url('https://www.laylacollection.com/cdn/shop/articles/accessory_1100x.jpg?v=1608881077');
@@ -659,6 +677,9 @@
   .text-\[var\(--color-primary-tint-3\)\] {
     color: var(--color-primary-tint-3);
   }
+  .text-\[var\(--gray\)\] {
+    color: var(--gray);
+  }
   .text-\[var\(--gray-4\)\] {
     color: var(--gray-4);
   }
@@ -670,9 +691,6 @@
   }
   .text-\[var\(--gray-10\)\] {
     color: var(--gray-10);
-  }
-  .text-\[var\(--gray9\)\] {
-    color: var(--gray9);
   }
   .text-white {
     color: var(--color-white);
@@ -721,20 +739,6 @@
       }
     }
   }
-  .hover\:bg-\[rgba\(0\,0\,0\,0\.1\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: rgba(0,0,0,0.1);
-      }
-    }
-  }
-  .hover\:bg-\[rgba\(0\,0\,0\,0\.2\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: rgba(0,0,0,0.2);
-      }
-    }
-  }
   .hover\:bg-\[rgba\(0\,0\,0\,0\.05\)\] {
     &:hover {
       @media (hover: hover) {
@@ -767,9 +771,19 @@
       grid-column: span 3 / span 3;
     }
   }
+  .sm\:col-span-4 {
+    @media (width >= 40rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
   .sm\:col-span-5 {
     @media (width >= 40rem) {
       grid-column: span 5 / span 5;
+    }
+  }
+  .sm\:col-span-8 {
+    @media (width >= 40rem) {
+      grid-column: span 8 / span 8;
     }
   }
   .sm\:col-span-9 {
@@ -868,6 +882,11 @@
   .sm\:gap-5 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:gap-6 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 6);
     }
   }
   .sm\:gap-10 {

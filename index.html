@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preload" href="./style/main.css" as="script">
+    <link rel="preload" href="./style/outputIndex.css" as="script">
+    
     <link rel="stylesheet" href="./style/outputIndex.css">
     <link rel="stylesheet" href="./style/main.css">
+
+    <link rel="shortcut icon" href="images/mobile-logo.svg" type="image/x-icon">
+
     <title>کاستومی | فروشگاه آنلاین</title>
 </head>
 
@@ -42,7 +50,7 @@
                 <a href="/cart.html" class=" col-span-1 justify-self-end  flex items-center gap-2">
                     <div class="relative">
                         <img src="images/shopping-cart-logo.svg" alt="">
-                        <span
+                        <span id="count_of_products_in_basket"
                             class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
                     </div>
                     <span class="sm:block hidden">سبد خرید</span>
@@ -68,9 +76,9 @@
 
                     <!-- hero actions -->
                     <div>
-                        <button
-                            class="border-1 w-full rounded-[var(--radius-16)] text-[var(--color-primary)] border-[var(--color-primary)] py-3  mt-10 cursor-pointer">دیدن
-                            محصولات</button>
+                        <a href="/category.html?category=all"
+                            class="border-1 w-full text-center block rounded-[var(--radius-16)] text-[var(--color-primary)] border-[var(--color-primary)] py-3  mt-10 cursor-pointer">دیدن
+                            محصولات</a>
                     </div>
                 </div>
 
@@ -100,15 +108,15 @@
             <div class="my-6 flex justify-start items-center gap-8">
 
 
-                    <div class="flex justify-start items-center gap-2">
-                        <img class="max-w-8 " src="images/medal-star.svg" alt="">
-                        <h4 class="text-[var(--gray-10)] text-nowrap heading-5">دسته بندی محصولات</h4>
-                    </div>
-                    <hr class="w-full text-[var(--gray-4)]" />
+                <div class="flex justify-start items-center gap-2">
+                    <img class="max-w-8 " src="images/medal-star.svg" alt="">
+                    <h4 class="text-[var(--gray-10)] text-nowrap heading-5">دسته بندی محصولات</h4>
+                </div>
+                <hr class="w-full text-[var(--gray-4)]" />
 
 
 
-   
+
             </div>
 
             <!-- categories -->
@@ -168,180 +176,25 @@
         <!-- Bestsellers -->
         <section class="container">
 
-             <!-- top of category -->
+            <!-- top of category -->
             <div class="my-6 flex justify-start items-center gap-8">
 
 
-                    <div class="flex justify-start items-center gap-2">
-                        <img class="max-w-8 " src="images/medal-star.svg" alt="">
-                        <h4 class="text-[var(--gray-10)] text-nowrap heading-5">
-                            پرفروش ترین ها    
-                        </h4>
-                    </div>
-                    <hr class="w-full text-[var(--gray-4)]" />
+                <div class="flex justify-start items-center gap-2">
+                    <img class="max-w-8 " src="images/medal-star.svg" alt="">
+                    <h4 class="text-[var(--gray-10)] text-nowrap heading-5">
+                        پرفروش ترین ها
+                    </h4>
+                </div>
+                <hr class="w-full text-[var(--gray-4)]" />
 
 
 
-   
+
             </div>
 
             <!-- products -->
-            <ul class="grid md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] grid-cols-2 gap-6 my-10">
-
-            
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
+            <ul id="best-sells" class="grid md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] grid-cols-2 gap-2 sm:gap-6 my-10">
             </ul>
         </section>
 
@@ -354,24 +207,24 @@
             <div class="my-6 flex justify-start items-center gap-8">
 
 
-                    <div class="flex justify-start items-center gap-2">
-                        <img class="max-w-8 " src="images/medal-star.svg" alt="">
-                        <h4 class="text-[var(--gray-10)] text-nowrap heading-5"> 
-                            فروش ویژه    
-                        </h4>
-                    </div>
-                    <hr class="w-full text-[var(--gray-4)]" />
+                <div class="flex justify-start items-center gap-2">
+                    <img class="max-w-8 " src="images/medal-star.svg" alt="">
+                    <h4 class="text-[var(--gray-10)] text-nowrap heading-5">
+                        فروش ویژه
+                    </h4>
+                </div>
+                <hr class="w-full text-[var(--gray-4)]" />
 
 
 
-   
+
             </div>
 
             <!-- content -->
             <div class="grid sm:grid-cols-4 grid-rows-4 sm:grid-rows-2 sm:gap-5 gap-1">
 
                 <!-- right image  -->
-                <div
+                <a href="/category.html?category=home-decor"
                     class="relative col-span-2 flex justify-start items-end p-4 sm:p-10 rounded-[var(--radius-16)] bg-center bg-cover bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/4:3/w_1439,h_1079,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg')] overflow-hidden aspect-square row-span-2 ">
                     <h3 class=" heading-3  text-[var(--color-primary-tint-3)] ">دکور خانه</h3>
 
@@ -381,11 +234,11 @@
                         20% OFF</h2>
 
 
-                </div>
+                </a>
 
                 <!-- left images  -->
 
-                <div
+                <a href="/category.html?category=accessory"
                     class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://www.laylacollection.com/cdn/shop/articles/accessory_1100x.jpg?v=1608881077')]">
 
                     <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">اکسسوری</h3>
@@ -395,28 +248,14 @@
                     <img class="absolute -top-1 left-2 sm:left-10 sm:w-12 w-8" src="images/off-ticket.png" alt="">
                     <h2
                         class="sm:text-[20px] sm:font-[200] absolute top-0 max-w-[5px] text-white sm:left-[77px]! left-[29px] text-[10px] ">
-                        20% OFF</h2>
+                        30% OFF</h2>
 
-                </div>
+                </a>
 
-                <div
-                    class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://www.laylacollection.com/cdn/shop/articles/accessory_1100x.jpg?v=1608881077')]">
+                <a href="/category.html?category=mobile-cover"
+                    class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://royal-cover.com/wp-content/uploads/2025/04/10-1.jpg')]">
 
-                    <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">اکسسوری</h3>
-
-
-
-                    <img class="absolute -top-1 left-2 sm:left-10 sm:w-12 w-8" src="images/off-ticket.png" alt="">
-                    <h2
-                        class="sm:text-[20px] sm:font-[200] absolute top-0 max-w-[5px] text-white sm:left-[77px]! left-[29px] text-[10px] ">
-                        20% OFF</h2>
-
-                </div>
-
-                <div
-                    class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://www.laylacollection.com/cdn/shop/articles/accessory_1100x.jpg?v=1608881077')]">
-
-                    <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">اکسسوری</h3>
+                    <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">قاب موبایل</h3>
 
 
 
@@ -425,12 +264,26 @@
                         class="sm:text-[20px] sm:font-[200] absolute top-0 max-w-[5px] text-white sm:left-[77px]! left-[29px] text-[10px] ">
                         20% OFF</h2>
 
-                </div>
+                </a>
 
-                <div
-                    class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://www.laylacollection.com/cdn/shop/articles/accessory_1100x.jpg?v=1608881077')]">
+                <a href="/category.html?category=writing-supplies"
+                    class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://owlgallery.ir/wp-content/uploads/2023/08/photo_%DB%B2%DB%B0%DB%B2%DB%B3-%DB%B0%DB%B8-%DB%B1%DB%B6_%DB%B1%DB%B9-%DB%B1%DB%B7-%DB%B2%DB%B1.jpg')]">
 
-                    <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">اکسسوری</h3>
+                    <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">لوازم تحریر</h3>
+
+
+
+                    <img class="absolute -top-1 left-2 sm:left-10 sm:w-12 w-8" src="images/off-ticket.png" alt="">
+                    <h2
+                        class="sm:text-[20px] sm:font-[200] absolute top-0 max-w-[5px] text-white sm:left-[77px]! left-[29px] text-[10px] ">
+                        25% OFF</h2>
+
+                </a>
+
+                <a href="/category.html?category=clothes"
+                    class="relative flex justify-start sm:p-6 p-2 items-end rounded-[var(--radius-16)] overflow-hidden bg-cover bg-center bg-no-repeat bg-[linear-gradient(to_top,#000000_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%),url('https://padmira.ir/upload/product/thumb_%D8%B3%D8%AA-%DA%A9%D8%AA-%D9%88-%D8%AF%D8%A7%D9%85%D9%86-%281%29_1751283352.jpg')]">
+
+                    <h3 class="body-4 sm:text-2xl! sm:font-[800]! text-[var(--color-primary-tint-3)] ">لباس</h3>
 
 
 
@@ -439,19 +292,44 @@
                         class="sm:text-[20px] sm:font-[200] absolute top-0 max-w-[5px] text-white sm:left-[77px]! left-[29px] text-[10px] ">
                         20% OFF</h2>
 
-                </div>
-
-
-
+                </a>
 
 
             </div>
 
         </section>
 
+
+        <!-- liked products -->
+        <section class="container">
+
+            <!-- top of liked products -->
+            <div class="my-6 flex justify-start items-center gap-8">
+
+
+                <div class="flex justify-start items-center gap-2">
+                    <img class="max-w-8 " src="images/liked-section.svg" alt="">
+                    <h4 class="text-[var(--gray-10)] text-nowrap heading-5">
+                       علاقمندی ها
+                    </h4>
+                </div>
+                <hr class="w-full text-[var(--gray-4)]" />
+
+            </div>
+
+            <ul id="liked-products" class="grid md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] grid-cols-2 gap-6 my-10">
+                <h4 class="body-1 text-center text-[var(--gray-10)]">
+                    علاقمندی های شما خالی است.
+                </h4>
+            </ul>
+
+
+
+        </section>
+
     </main>
 
-<footer class="bg-[var(--color-primary)] pt-10 mt-10">
+    <footer class="bg-[var(--color-primary)] pt-10 mt-10">
 
         <section class="container ">
 
@@ -508,10 +386,12 @@
 
     </footer>
 
-    
 
 
-    <script src="js/navbar.js"></script>
+
+    <script type="module" src="js/navbar.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/likeProduct.js"></script>
 </body>
 
 </html>

@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/outputCategory.css">
-    
+
     <link rel="stylesheet" href="./style/main.css">
+
+    <link rel="shortcut icon" href="images/mobile-logo.svg" type="image/x-icon">
+
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.4.3/css/tom-select.css" rel="stylesheet">
 
     <title>دسته بندی محصولات</title>
 
-  
+
 </head>
 
 <body>
 
     <header>
-       <!-- navbar section  -->
+        <!-- navbar section  -->
         <section class="border py-4 border-[var(--gray-4)]">
             <nav class="container grid grid-cols-5 items-center">
 
@@ -47,7 +50,7 @@
                 <a href="/cart.html" class=" col-span-1 justify-self-end  flex items-center gap-2">
                     <div class="relative">
                         <img src="images/shopping-cart-logo.svg" alt="">
-                        <span
+                        <span id="count_of_products_in_basket"
                             class="absolute bg-[var(--color-primary-tint-5)] -top-2 -right-3  px-2 flex justify-center items-center rounded-full sm:caption-1 caption-4 text-[var(--gray-10)]">0</span>
                     </div>
                     <span class="sm:block hidden">سبد خرید</span>
@@ -63,7 +66,7 @@
 
 
             <div>
-                <h3 class="text-center heading-3 mt-8">
+                <h3 id="page-title" class="text-center heading-3 mt-8">
                     #همه محصولات
                 </h3>
             </div>
@@ -71,7 +74,7 @@
             <div class="grid grid-cols-4  mt-10 gap-2">
 
                 <!-- fillters -->
-                <div class=" hidden col-span-1 sm:block sm:static fixed inset-0 z-10 bg-white ">
+                <div id="filters-container" class=" hidden col-span-1 sm:block sm:static fixed inset-0 z-10 bg-white ">
 
                     <div
                         class="rounded-[var(--radius-8)] border-0 sm:border border-[var(--gray-4)]  py-4 px-2 sticky top-6">
@@ -84,88 +87,65 @@
 
                             <div class="flex justify-between items-center gap-2 sm:hidden">
 
-                                <button>
-                                    <img src="images/arrow-right-2.svg" alt=""> 
+                                <button id="close-filters-container">
+                                    <img src="images/arrow-right-2.svg" alt="">
                                 </button>
 
                                 <span class="body-3">
                                     فیلتر ها
                                 </span>
-                                
+
                             </div>
 
-                            <button class="caption-3 text-[var(--color-primary)] underline cursor-pointer">
+                            <button id="reset-filters"
+                                class="caption-3 text-[var(--color-primary)] underline cursor-pointer">
                                 حذف فیلتر ها
                             </button>
                         </div>
 
                         <ul class="flex flex-col gap-2 ">
-                            
+
                             <li class="filter-option ">
-                                <select id="select-links" placeholder="Pick some links...">
-                                    <option value="1">برند را انتخاب کنید...</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                <select id="category" placeholder="Pick some links...">
+                                    <option value="1">دسته بندی را انتخاب کنید...</option>
+                                    <option value="mobile-cover">قاب موبایل</option>
+                                    <option value="greeting-card">کارت تبریک</option>
+                                    <option value="accessory">اکسسوری</option>
+                                    <option value="writing-supplies">لوازم تحریر</option>
+                                    <option value="clothes">لباس </option>
+                                    <option value="home-decor">دکور خانه </option>
+                                    <option value="all">همه محصولات </option>
                                 </select>
                             </li>
-                            
-                            
+
                             <li class="filter-option ">
-                                <select id="select-links" placeholder="Pick some links...">
-                                    <option value="1">برند را انتخاب کنید...</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                <select id="max-price" placeholder="Pick some links...">
+                                    <option value="1">حداکثر قیمت محصول را انتخاب کنید...</option>
+                                    <option value="500000">500,000 تومان </option>
+                                    <option value="800000">800,000 تومان </option>
+                                    <option value="1000000">1,000,000 تومان</option>
+                                    <option value="1500000">1,500,000 تومان</option>
+                                    <option value="2000000">2,000,000 تومان</option>
+                                    <option value="5000000">5,000,000 تومان</option>
                                 </select>
                             </li>
-                            
-                            <li class="filter-option ">
-                                <select id="select-links" placeholder="Pick some links...">
-                                    <option value="1">برند را انتخاب کنید...</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </li>
-                            
-                            <li class="filter-option ">
-                                <select id="select-links" placeholder="Pick some links...">
-                                    <option value="1">برند را انتخاب کنید...</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </li>
-                            
-                            <li class="filter-option ">
-                                <select id="select-links" placeholder="Pick some links...">
-                                    <option value="1">برند را انتخاب کنید...</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </li>
+
 
                         </ul>
 
-                        <button class="w-full text-center bg-[var(--color-primary)] button-2 py-2 rounded-[var(--radius-8)] text-white mt-8">
+                        <button id="confirm-filters"
+                            class="w-full sm:hidden text-center bg-[var(--color-primary)] button-2 py-2 rounded-[var(--radius-8)] text-white mt-8">
                             اعمال فیلتر ها
                         </button>
                     </div>
                 </div>
 
                 <!-- left content -->
-                <div class="   sm:col-span-3 col-span-4">
+                <div class="sm:col-span-3 col-span-4">
 
-                    <button class="flex justify-center items-center gap-2 my-4 px-1">
+                    <button id="show-filters" class="flex sm:hidden justify-center items-center gap-2 my-4 px-1">
 
-                        <img src="images/setting-5.svg" alt="">
+                        <img class="" src="images/setting-5.svg" alt="">
                         <span class="body-5">
                             فیلتر
                         </span>
@@ -173,171 +153,12 @@
                     </button>
 
                     <!-- products -->
-                    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-
-                        <li class=" p-4 border border-[var(--gray-4)] rounded-[var(--radius-16)]  ">
-                            <!-- product image -->
-                            <a href="/detail-product.html">
-                                <div><img class="w-full" src="images/female-Tshirt.png" alt=""></div>
-                            </a>
-
-                            <!-- product content -->
-                            <div>
-                                <!-- title and like -->
-                                <div class="flex justify-between items-center my-4">
-
-                                    <a href="/detail-product.html">
-                                        <h6 class="heading-6 sm:text-[18px] text-[16px]! ">تیشرت 2</h6>
-                                    </a>
-
-                                    <!-- like button  -->
-                                    <button class="cursor-pointer">
-                                        <img src="images/like-logo.svg" alt="like-button">
-                                    </button>
-
-
-                                </div>
-
-                                <!-- caption & price  -->
-                                <div>
-                                    <a href="/detail-product.html">
-                                        <div class="flex justify-between gap-18 sm:gap-10 flex-col">
-                                            <span class="block h-12 body-4">دارای رنگ بندی، قابل طراحی</span>
-                                            <span class="block heading-6 sm:text-[18px] text-[16px]! text-end">150,000
-                                                تومان</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </li>
-
-
-                       
+                    <ul id="products-container" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     </ul>
 
 
                     <!-- pagination -->
-                    <div class="flex justify-center gap-4 items-center mt-8 ">
+                    <!-- <div class="flex justify-center gap-4 items-center mt-8 ">
                         <button>
                             <img class="min-w-6" src="images/arrow-right.svg" alt="">
                         </button>
@@ -354,7 +175,7 @@
                         <button>
                             <img class="min-w-6 rotate-180" src="images/arrow-right.svg" alt="">
                         </button>
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -425,35 +246,23 @@
     </footer>
 
 
+
+    <!-- tom select library cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.4.3/js/tom-select.complete.js"
         integrity="sha512-cv8SyZZkoW3eB3rWs0JsM/wNxKZe59+tMN8ewVIu24I1EAeBOT6lqkdty/iMxo3OJGvrFRYIrrGwM5BJqAXsYw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="js/navbar.js"></script>
 
-    <script>
 
-        document.querySelectorAll('#select-links').forEach(s => {
 
-            new TomSelect(s, {
-            create: true,
-            sortField: {
-                field: "text",
-                direction: "asc"
-            }
-        });
+    <script type="module" src="js/category.js"></script>
+    <!-- <script src="js/filterProducts.js"></script> -->
 
-        })
+    <script type="module" src="js/navbar.js"></script>
 
-        // new TomSelect("#select-links", {
-        //     create: true,
-        //     sortField: {
-        //         field: "text",
-        //         direction: "asc"
-        //     }
-        // });
-    </script>
+    <script type="module" src="js/handleLikesInCategory.js"></script>
 
+    
 </body>
 
 </html>

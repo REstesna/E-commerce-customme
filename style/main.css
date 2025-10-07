@@ -1,7 +1,11 @@
 
 *{
     direction: rtl;
-    /* font:400 14px/1.2 var(--font-family-base); */
+}
+
+::selection{
+    background-color: #A72F3B;
+    color: #fff;
 }
 
 @font-face {
@@ -68,6 +72,8 @@ input{
   /* Typography */
   --font-family-base: 'Estedad', sans-serif;
 
+  --heading-1: 800 44px/140% var(--font-family-base);
+  --heading-2: 800 40px/140% var(--font-family-base);
   --heading-3: 800 32px/140% var(--font-family-base);
   --heading-4: 800 24px/140% var(--font-family-base);
   --heading-5: 800 20px/140% var(--font-family-base);
@@ -93,6 +99,12 @@ input{
     max-width: 1300px;
 }
 
+.heading-1{
+    font: var(--heading-1);
+}
+.heading-2{
+    font: var(--heading-2);
+}
 .heading-3{
     font: var(--heading-3);
 }
