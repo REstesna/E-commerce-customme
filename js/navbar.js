@@ -39,7 +39,7 @@ searchInputElem.addEventListener('keypress', event => {
     if ( event.charCode === 13 && searchInputElem.value.trim() != '' ) {
         console.log('enter');
         const query = searchInputElem.value.trim()
-        window.location.href = `/search.html?q=${encodeURIComponent(query)}`
+        window.location.href = `./search.html?q=${encodeURIComponent(query)}`
     }
     
 })

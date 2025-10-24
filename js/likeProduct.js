@@ -56,7 +56,10 @@ window.onload = () => {
         generateProductInContainer(likedProductsContainer, likedProducts);
     } 
 
-    if ( likedProductsContainer && likedProductsFromLocal.length < 1 ) {
+    
+    
+
+    if ( likedProductsContainer && likedProductsFromLocal && likedProductsFromLocal.length < 1 ) {
         likedProductsContainer.innerHTML = ` <h4 class="body-1 col-span-2 text-center text-[var(--gray-10)]">
                     علاقمندی های شما خالی است.
                 </h4>`
