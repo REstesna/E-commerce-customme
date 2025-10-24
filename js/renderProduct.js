@@ -48,7 +48,7 @@ export const generateProductInContainer = (container, products) => {
                                     }">
                                         <img class="min-w-6 " src="${
                                           p.isLiked
-                                            ? "./images/like.svg"
+                                            ? "./images/Like.svg"
                                             : "./images/like-logo.svg"
                                         }" alt="like-button">
                                     </button>
